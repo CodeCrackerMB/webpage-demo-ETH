@@ -11,52 +11,86 @@
     h1 {
         padding: 10px;
         color: white;
-        background-color: blue;
+        background-color: blue; width: 300px;
         font-family:'Times New Roman', Times, serif;
         font-style: italic;
         font-weight: normal;
     }
     h2 {
-        border-width: 2px;
+        border-width: 3px;
         border-color: green;
         border-style: solid;
         width: fit-content;
         border-radius: 10px;
         font-weight: bold;
-        position:relative
+        position:relative;
+        padding:5px
     
         }
     p {
+        align-content: center;
         font-stretch: 200;
         font-weight:bold;
-        border-bottom: 5px;
+        border-bottom: 3px;
         border-color: red ;
         border-style: solid ;
-        width: fit-content;
+        width: 400px;
         border-top: 0cap;
         border-right: 0cap;
         border-left: 0cap;
-        font-size: 20px;
+        font-size: 25px;
         padding: 1px;
+        margin-bottom: 0px;
+       
 
     }
     img {
-        padding: 20px;
+        padding: 10px;
+        margin: 20px;
+
     }
     table {
-        padding: 10px;
+        padding: 25px;
+        font-size: larger;
         border-color: black;
         border-style: solid;
-       border-spacing: 15px;
-       border-collapse: collapse;
+        border-spacing: 15px;
+        border-collapse: collapse;
+        width:700px;
+        height: 100px
     }
     td, tr {
         border: 1px, solid ;
         padding: 3px
     }
+    .cat{
+        font-size:large;
+        font-weight:bold;
+        border-bottom: solid black;
+        width: fit-content
+    }
+    .pwr1::after {
+        content: "525 hp";
+    }
+    .pwr1:hover::after {
+        content: "386 kW";
+    }
+    .pwr2::after {
+        content: "505 hp";
+    }
+    .pwr2:hover::after {
+        content: "405 kW";
+    }
+    .pwr3::after {
+        content: "1800 hp";
+    }
+    .pwr3:hover::after {
+        content: "1340 kW";
+    }
     .logo {
         position: absolute ;
-        top: 800px;
+        top: 750px;
+        left: 60px;
         font-size:xx-large;
         font-weight: bold;
         transform: rotate(0deg);
@@ -69,32 +103,39 @@
 </style>
 <body>
     <h1> Web Design Demo</h1>
-    <h2> Botond</h2>
-    <p> Random image:</p>
-    <img src="https://picsum.photos/640/400" alt="Example image"/>
+    <h2> Botond Mucsányi</h2>
+    <p> Cars:</p>
+    <img src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7Zl2dioC0OSQDcFGFLuWXsOs8IeV6iTxjgzhRc2GaWqA7fQr7DOJtWFnQbNWMbdJ6gzyel2Pz3BZhUynAYL" alt="Example image" style="height: 300px;; width:400"/>
     <table border="0"> 
     <tr>
-        <td>Car </td>
-        <td>Porsche GT3 RS </td>
-        <td>BMW M4</td>
-        <td>Lammborghini Aventador</td>
+        <td><div class="cat">Car type</div> </td>
+        <td><a href="https://www.porsche.com/international/models/911/911-gt3-rs/911-gt3-rs/">Porsche GT3 RS</a> </td>
+        <td><a href="https://www.press.bmwgroup.com/global/article/detail/T0441542EN/the-all-new-bmw-m4-cs?language=en">BMW M4 CS</a></td>
+        <td><a href="https://www.bugatti.com/en/models/tourbillon">Bugatti Tourbillon</a></td>
     </tr>
     <tr>
-        <td>Engine</td>
+        <td><div class="cat"> Engine</div></td>
         <td>V6</td>
         <td>I6</td>
         <td>V16</td>
     </tr>
     <tr>
-        <td>Price</td>
-        <td>$400.000</td>
-        <td>$100.000</td>
-        <td>$1.000.000</td>
+        <td><div class="cat">Price</dive></td>
+        <td>$300.000</td>
+        <td>$125.000</td>
+        <td>$4.100.000</td>
+    </tr>
+    <tr>
+        <td><div class="cat">Power</dive></td>
+        <td><div class="pwr1"></div></td>
+        <td><div class="pwr2"></div></td>
+        <td><div class="pwr3"></div></td>
     </tr>
     </table>
-    <div class="logo"> <a href="https://ethz.ch/de.html">ETH</a>
+    <div class="logo"> <a href="https://ethz.ch/de.html">ETH-Home</a>
     </div>
    
 </body>
 
 </html>
+
